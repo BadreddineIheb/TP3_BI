@@ -16,7 +16,7 @@ while HA > HF :
     print("Attention ! le début de la location est après la fin")
     HA = int(input("Donnez l’heure de début de la location (un entier) : "))
 for i in range (HA,HF):
-    if i >0 and i < 7 or i > 17 and i < 24:
+    if i < 7 or i >=17 :
         h_1 = h_1 + 1
     else :
         h_2 = h_2 + 1
