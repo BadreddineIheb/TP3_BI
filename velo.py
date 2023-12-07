@@ -2,11 +2,11 @@ from time import sleep
 h_1=0
 h_2=0
 HA=int(input("Donnez l’heure de début de la location (un entier) : "))
-while HA>24 and HA<0 :
+while HA>24 or HA<0 :
     print("Les heures doivent être comprises entre 0 et 24 !")
     HA = int(input("Donnez l’heure de début de la location (un entier) : "))
 HF=int(input("Donnez l’heure de fin de la location (un entier) : "))
-while HF>24 and HF<0 :
+while HF>24 or HF<0 :
     print("Les heures doivent être comprises entre 0 et 24 !")
     HF=int(input("Donnez l’heure de fin de la location (un entier) : "))
 while HF==HA:
